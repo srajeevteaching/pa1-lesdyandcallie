@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>pa1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a5c261;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pa1.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Team Members: Lesdy Galvez</span>
+<span class="s0"># Course: CS151,Dr.Rajeev</span>
+<span class="s0"># Date: 09-22-2021</span>
+<span class="s0"># Programming Assignment: 1</span>
+<span class="s0"># Program Inputs : input(length, width, height)</span>
+<span class="s0"># Program Outputs : output(What is total area of 4 walls and ceiling, how many gallons of paint and primer needed)</span>
+
+<span class="s0">#ask user for dimensions (length,width and height)of a room in feet</span>
+<span class="s1">room_length=input(</span><span class="s2">&quot;Enter room_length(feet):&quot;</span><span class="s1">)</span>
+<span class="s1">room_width=input(</span><span class="s2">&quot;Enter room_width(feet):&quot;</span><span class="s1">)</span>
+<span class="s1">room_height=input(</span><span class="s2">&quot;Enter room_height(feet):&quot;</span><span class="s1">)</span>
+<span class="s3">print</span><span class="s1">(room_length)</span>
+<span class="s3">print</span><span class="s1">(room_width)</span>
+<span class="s3">print</span><span class="s1">(room_height)</span>
+
+<span class="s0">#compute total area of the 4 walls and ceiling</span>
+<span class="s1">area_of_room= </span><span class="s4">2</span><span class="s1">*(room_length + room_width) * </span><span class="s4">4</span>
+<span class="s3">print</span><span class="s1">(area_of_room)</span>
+<span class="s1">ceiling_area= float(room_length)*(room_width)</span>
+<span class="s3">print</span><span class="s1">(ceiling_area)</span>
+<span class="s1">total_area=float(area_of_room)+(ceiling_area)</span>
+<span class="s3">print</span><span class="s1">(total_area)</span>
+
+<span class="s0">#amount of primer and paint needed</span>
+
+<span class="s1">primer_needed=float(total_area)/</span><span class="s4">200</span>
+<span class="s3">print</span><span class="s1">(primer_needed)</span>
+
+<span class="s1">paint_needed=float(total_area)/</span><span class="s4">350</span>
+<span class="s3">print</span><span class="s1">(paint_needed)</span>
+
+<span class="s3">print</span><span class="s1">(</span><span class="s2">&quot;Thank you for using my code.&quot;</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
